@@ -6,7 +6,7 @@ from diagrams.onprem.database import PostgreSQL
 
 
 with Diagram("local_workflow", show=False):
-    initial_bike_data = [BigQuery('bikeshare_regions'),
+    initial_bike_data = [BigQuery("bikeshare_regions"),
     BigQuery("bikeshare_station_info"),
     BigQuery("bikeshare_station_status"),
     BigQuery("bikeshare_trips")]
