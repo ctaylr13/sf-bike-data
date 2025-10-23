@@ -12,7 +12,8 @@ with Diagram("local_workflow", show=False):
         BigQuery("bikeshare_station_status"),
         BigQuery("bikeshare_trips")]
 
-    initial_bike_data >> Python('download_bike_data.py') >> \
-    Client('data/bike_data') >> Python('data_to_db.py') >>  \
+    initial_bike_data >> \
+    Python('download_bike_data.py') >> \
+    Client('data/bike_data') >> \
+    Python('ingest_raw_.py') >>  \
     PostgreSQL('local_db')
-    
