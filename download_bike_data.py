@@ -5,12 +5,12 @@ import pandas as pd
 client = bigquery.Client()
 
 # Specify the table
-table_id = 'bigquery-public-data.san_francisco_bikeshare.bikeshare_trips'
+table_id = 'bigquery-public-data.san_francisco_bikeshare.bikeshare_regions'
 
 # Load table data into a pandas DataFrame
 table_data = client.query(f'SELECT * FROM `{table_id}`').result().to_dataframe()
 
 # Save to CSV
-table_data.to_csv('bikeshare_station_trips.csv', index=False)
+table_data.to_csv('data/bikeshare_regions.csv', index=False)
 
-print("Table downloaded and saved as 'bikeshare_station_trips.csv'")
+print("Table downloaded and saved as 'bikeshare_regions.csv'")
