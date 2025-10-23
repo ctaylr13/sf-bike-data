@@ -208,4 +208,5 @@ __marimo__/
 
 
 #local csv files
-data
+*.csv
+*.db
