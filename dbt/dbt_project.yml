@@ -1,0 +1,15 @@
+name: sf_bike_data
+version: 1.0.0
+config-version: 2
+
+# Define the directory where models are stored
+profile: default # Make sure this matches your profile in profiles.yml
+
+# Optional: specify where to place your models, seeds, snapshots, etc.
+model-paths: ["models"]
+models:
+    my_dbt_project:
+        # You can add model-specific configs here
+        +materialized: view # Default materialization for models
+
+# You can also define other settings like target-path, clean-targets, etc.

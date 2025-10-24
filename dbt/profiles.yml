@@ -1,0 +1,6 @@
+default:
+    outputs:
+        dev:
+            type: duckdb
+            path: ../data/raw_bike_data.db
+    target: dev
