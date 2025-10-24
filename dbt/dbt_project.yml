@@ -8,7 +8,7 @@ profile: default # Make sure this matches your profile in profiles.yml
 # Optional: specify where to place your models, seeds, snapshots, etc.
 model-paths: ["models"]
 models:
-    my_dbt_project:
+    processing_station_info:
         # You can add model-specific configs here
         +materialized: view # Default materialization for models
 
