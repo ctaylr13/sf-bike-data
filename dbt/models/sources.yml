@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+    - name: raw_bike_data
+      schema: main
+      tables:
+          - name: bikeshare_regions
+          - name: bikeshare_station_info
+          - name: bikeshare_station_status
+          - name: bikeshare_station_trips

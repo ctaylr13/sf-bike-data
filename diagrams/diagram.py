@@ -3,6 +3,7 @@ from diagrams.programming.language import Python
 from diagrams.gcp.analytics import BigQuery
 from diagrams.onprem.client import Client
 from diagrams.onprem.database import PostgreSQL
+from diagrams.onprem.analytics import Dbt
 
 
 with Diagram("local_workflow", show=False):
@@ -16,4 +17,5 @@ with Diagram("local_workflow", show=False):
     Python('download_bike_data.py') >> \
     Client('data/bike_data') >> \
     Python('ingest_raw_.py') >>  \
-    PostgreSQL('local_db')
+    PostgreSQL('local_db') >> \
+    Dbt('dbt things')
