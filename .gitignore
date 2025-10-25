@@ -212,3 +212,4 @@ __marimo__/
 *.db
 
 api_keys.json
+*.env
