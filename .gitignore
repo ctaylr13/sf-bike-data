@@ -210,3 +210,5 @@ __marimo__/
 #local csv files
 *.csv
 *.db
+
+api_keys.json
