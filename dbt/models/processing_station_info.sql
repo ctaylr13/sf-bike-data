@@ -7,5 +7,6 @@ SELECT
     region_id,
     capacity,
     has_kiosk,
+    elevation,
     station_geom AS station_coords
 from {{ source('raw_bike_data', 'bikeshare_station_info') }}
